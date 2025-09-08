@@ -1,0 +1,65 @@
+.services-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.services-page.fade-in {
+  opacity: 1;
+}
+
+.services-page h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 1s ease;
+}
+
+.services-page h1.slide-down {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.services-page ul {
+  list-style: disc inside;
+  padding-left: 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease 0.3s;
+}
+
+.services-page ul.fade-in-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.services-page p {
+  margin-top: 1rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease 0.5s;
+}
+
+.services-page p.fade-in-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optional styling for list items */
+.services-page li {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .services-page {
+    padding: 1rem;
+  }
+}

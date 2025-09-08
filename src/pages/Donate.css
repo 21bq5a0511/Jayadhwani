@@ -1,0 +1,46 @@
+/* Donate.css */
+.donate-page {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #e0f7fa, #f0f8ff);
+  border-radius: 15px;
+  margin: 2rem auto;
+  max-width: 500px;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+  animation: fadeIn 1s ease-in;
+  transition: transform 0.3s ease;
+}
+
+.donate-page:hover {
+  transform: scale(1.02);
+}
+
+.qr-code {
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: white;
+  display: inline-block;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.qr-code:hover {
+  transform: scale(1.05);
+}
+
+.donate-page h1 {
+  font-size: 2.5rem;
+  color: #4a90e2;
+  margin-bottom: 1rem;
+}
+
+.donate-page p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px);}
+  to { opacity: 1; transform: translateY(0);}
+}

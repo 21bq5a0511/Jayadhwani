@@ -1,0 +1,139 @@
+.home-page {
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  background: url("../assets/hero.jpg") no-repeat center center/cover;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.hero-btn {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero-btn:hover {
+  background: #e65500;
+}
+
+/* Ministries Section */
+.ministries {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #f9f9f9;
+  margin: 2rem auto;
+  border-radius: 12px;
+  max-width: 900px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.ministries h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.ministries p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Info Section - Side by Side */
+.info-section {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  flex-wrap: wrap;
+}
+
+.about-box,
+.services-box {
+  flex: 1;
+  min-width: 280px;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.about-box h2,
+.services-box h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.about-box p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.services-box ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.services-box li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+/* Buttons */
+.link-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #2c3e50;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background 0.3s;
+}
+
+.link-btn:hover {
+  background: #1a242f;
+}

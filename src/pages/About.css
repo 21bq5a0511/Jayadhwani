@@ -1,0 +1,91 @@
+.about-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.about-page.fade-in {
+  opacity: 1;
+}
+
+.about-page h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 1s ease;
+}
+
+.about-page h1.slide-down {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.pastor-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease 0.3s;
+}
+
+.pastor-section.fade-in-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.pastor-photo {
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #007bff;
+  object-fit: cover;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.pastor-photo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.pastor-text {
+  flex: 1;
+}
+
+.pastor-text h2 {
+  margin-top: 0;
+  color: #007bff;
+}
+
+.ministry-info {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease 0.6s;
+}
+
+.ministry-info.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .pastor-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pastor-photo {
+    width: 120px;
+  }
+}

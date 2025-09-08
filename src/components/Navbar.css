@@ -1,0 +1,80 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #dd45aa, #50c9c3);
+  padding: 1rem 2rem;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.nav-links {
+  display: flex;           /* horizontal layout */
+  gap: 1.5rem;             /* spacing between links */
+  list-style: none;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #f4c430;
+  transform: scale(1.1);
+}
+
+.donate-btn {
+  background-color: #f4c430;
+  color: #222;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.donate-btn:hover {
+  background-color: #e0b020;
+  transform: scale(1.05);
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column; /* stack vertically on mobile */
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+}
+.logo-img {
+  height: 50px;       /* fixed height */
+  width: auto;        /* maintain aspect ratio */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.1);
+}
+
+/* Optional: reduce size on smaller screens */
+@media (max-width: 768px) {
+  .logo-img {
+    height: 100px;
+  }
+}
+.logo {
+  width: 60px;         /* adjust size */
+  height: 60px;        /* make height same as width */
+  border-radius: 50%;  /* makes it circular */
+  object-fit: cover;   /* crop inside circle */
+  border: 2px solid white; /* optional border */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3); /* optional shadow */
+}
