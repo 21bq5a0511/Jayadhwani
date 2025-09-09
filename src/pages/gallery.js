@@ -9,23 +9,22 @@ function Gallery() {
       <div className="gallery-items">
         {/* Pastor Image Card */}
         <div className="gallery-card">
-          <img src="/pastor.jpg" alt="Our Pastor" />
-          <p>Our Pastor</p>
+          <img src={process.env.PUBLIC_URL + "/pastor.jpg"} alt="Our Pastor" /><p>Pastor John Peter</p>
         </div>
 
         {/* Songs PDF Card */}
         <div className="gallery-card">
           <p>Jayadhwani Songs PDF</p>
-          <a href="/songs.pdf" target="_blank" rel="noopener noreferrer">
-            Open PDF
-          </a>
+          <a href={process.env.PUBLIC_URL + "/songs.pdf"} target="_blank" rel="noopener noreferrer">
+  Open PDF
+</a>
         </div>
 
         {/* You can add more cards below */}
         {/* Example: Another image card */}
         {/*<div className="gallery-card">
-          <img src="/church-event.jpg" alt="Church Event" />
-          <p>Church Event</p>
+          <img src="/Ministries-event.jpg" alt="Ministries Event" />
+          <p>Ministries Event</p>
         </div>*/}
       </div>
     </div>

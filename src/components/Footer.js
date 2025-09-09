@@ -5,7 +5,7 @@ import './Footer.css';
 function Footer() {
   return (
     <footer>
-      <p>© 2025 Jayadhwani Church. All Rights Reserved.</p>
+      <p>© 2025 Jayadhwani Ministries. All Rights Reserved.</p>
       <div className="social-icons">
         <a href="https://www.facebook.com/share/16586X33oC/" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faFacebook} />

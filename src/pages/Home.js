@@ -60,9 +60,9 @@ const Home = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          <h2>About Our Church</h2>
+          <h2>About Our Ministries</h2>
           <p>
-            For over 12 years, Jayadhwani Church has been a place of love,
+            For over 12 years, Jayadhwani Ministries has been a place of love,
             fellowship, and community service. We welcome everyone, from children
             to seniors, and strive to create a nurturing spiritual environment.
           </p>

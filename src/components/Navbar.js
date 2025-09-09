@@ -7,7 +7,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="logo">
         <Link to="/">
-          <img src={logo} alt="Jayadhwani Church Logo" className="logo" />
+          <img src={logo} alt="Jayadhwani Ministries Logo" className="logo" />
         </Link>
       </div>
       <ul className="nav-links">

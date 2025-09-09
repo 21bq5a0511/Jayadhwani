@@ -15,7 +15,7 @@ function About() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        About Jayadhwani Church
+        About Jayadhwani Ministries
       </motion.h1>
 
       <motion.p
@@ -32,7 +32,7 @@ Over the years, we have seen God’s hand move mightily. Many individuals and fa
 
 Our pastor has always emphasized one thing: Jayadhwani is not about a person; it is about Christ alone. Every meeting, every worship session, and every gathering is centered around glorifying God and pointing people back to Jesus. The ministry stands as a living testimony that when we put God first, He leads us faithfully.
 
-Twelve years is not just a number for us—it represents years of prayer, sacrifice, joy, tears, and above all, God’s faithfulness. Even in moments of challenge, the Lord never let us down. He strengthened Pastor John Peter and the church family to press on with the vision. Today, we can boldly say that Jayadhwani exists only because of His grace and mercy.
+Twelve years is not just a number for us—it represents years of prayer, sacrifice, joy, tears, and above all, God’s faithfulness. Even in moments of challenge, the Lord never let us down. He strengthened Pastor John Peter and the Ministries family to press on with the vision. Today, we can boldly say that Jayadhwani exists only because of His grace and mercy.
 
 As we continue this journey, our heart remains the same: to spread the Word of God, to see lives transformed, and to be a vessel of His glory. We are grateful for every person who has been part of this journey—those who prayed with us, served with us, and stood with us in faith. Each one is a testimony of how God builds His kingdom through ordinary people with extraordinary faith.
 
@@ -48,7 +48,7 @@ Looking ahead, we believe the best is yet to come. Just as God led us faithfully
         viewport={{ once: true }}
       >
         <div className="pastor-image">
-          <img src="/images/pastor.jpg" alt="Pastor" className="pastor-img" />
+          <img src={process.env.PUBLIC_URL + "/pastor.jpg"} alt="Pastor" className="pastor-img" />
         </div>
         <div className="pastor-info">
           <h2>Meet Our Pastor</h2>
@@ -60,7 +60,7 @@ Looking ahead, we believe the best is yet to come. Just as God led us faithfully
             community.
           </p>
           <p>
-            Under his guidance, the church has grown into a family where people
+            Under his guidance, the Ministries has grown into a family where people
             of all ages are welcome to worship, learn, and fellowship together.
           </p>
         </div>
